@@ -1,0 +1,109 @@
+/* Dashboard.css */
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Styles for CustomerList and EditCustomer components */
+
+.customer-list-container {
+  margin-top: 20px; /* Adjust spacing between sidebar and content */
+}
+
+.customer-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.customer-list-container table th,
+.customer-list-container table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.customer-list-container table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.customer-list-container table td button {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.edit-customer-container {
+  margin-top: 20px; /* Adjust spacing between sidebar and content */
+}
+
+.edit-customer-container form {
+  /* Form styles */
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.edit-customer-container label {
+  margin-bottom: 8px;
+}
+
+.edit-customer-container input,
+.edit-customer-container textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.edit-customer-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-customer-container button:hover {
+  background-color: #0056b3;
+}
